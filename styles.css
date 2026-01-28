@@ -33,6 +33,9 @@ li {
 section {
   padding: 0 32px;
 }
+img {
+  width: 100%;
+}
 
 main {
   margin-bottom: 96px;
