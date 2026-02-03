@@ -417,7 +417,12 @@ STEPS ↓
 VALUES ↓
 
 */
-
+#values{
+  height: 100vh;
+}
+.values__container{
+  height: 100%;
+}
 #values .row {
   display: flex;
   justify-content: space-between;
