@@ -28,7 +28,6 @@ h2 {
   padding-bottom: 24px;
 }
 h3 {
-  padding-bottom: 20px;
 }
 .btn__menu {
   background-color: transparent;
@@ -270,7 +269,7 @@ FEATURES ↓
 }
 
 .page__title {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .services {
@@ -302,6 +301,7 @@ FEATURES ↓
 }
 .service__para {
   padding-right: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 .service__title--para {
@@ -436,17 +436,19 @@ VALUES ↓
 }
 .values__container {
   height: 100%;
- }
-#values .row  {
+}
+#values .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 auto; 
-  height: 100%; 
+  margin: 0 auto;
+  height: 100%;
 }
-.value__description {
+.values__para {
+  padding-bottom: 20px;
+}
+.values__description {
   display: flex;
-  flex-direction: column;
 }
 .values__text--container {
   display: flex;
@@ -454,9 +456,42 @@ VALUES ↓
   justify-content: center;
   max-width: 500px;
 }
-.values__img--container{
+
+.values__img--container {
   display: flex;
   align-items: center;
+  width: 45%;
+  padding-left: 40px;
+}
+.values__icon--container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.values__para--13 {
+  font-size: 13px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.value__icon--container-1 {
+  border-radius: 500px;
+  background-color: #b2e8b9;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.value__icon--container-2 {
+  border-radius: 500px;
+  background-color: #f6b9d6;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 /*
@@ -465,12 +500,65 @@ PRICING ↓
 
 */
 
+#pricing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 #pricing .row {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.plans {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.plan {
+  background-color: rgb(225, 226, 126);
+  width: 280px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.plan__price span {
+  font-size: 50%;
+  color: #666;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.plan__button {
+  background-color: #180cc0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.plan__button:hover {
+  background-color: #7b73e8;
+}
 /* 
 
 TESTIMONIALS ↓
