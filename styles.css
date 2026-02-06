@@ -27,8 +27,6 @@ h2 {
   font-size: 36px;
   padding-bottom: 24px;
 }
-h3 {
-}
 .btn__menu {
   background-color: transparent;
   border: none;
@@ -37,6 +35,8 @@ h3 {
 }
 button {
   max-width: 80px;
+  padding: 4px 6px;
+  display: flex;
 }
 .row {
   width: 100%;
@@ -107,10 +107,18 @@ Nav
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  gap: 8px;
+  padding: 8px;
 }
 .nav__link {
   padding-left: 20px;
+  display: flex;
+}
+.nav__link .nav__link--primary {
+  padding: 12px 32px;
+  background: #6415ff;
+  border-radius: 500px;
+  color: #f7fafc;
+  text-align: start;
 }
 
 /*
@@ -135,6 +143,7 @@ HEADER
 }
 .header__email--container {
   padding: 40px 0;
+  display: flex;
 }
 .header__customer--para {
   font-size: 12px;
@@ -297,11 +306,10 @@ FEATURES ↓
 }
 .service__para--wrapper {
   padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 .service__para {
-  padding-right: 20px;
-  padding-bottom: 20px;
+  font-size: 12;
   box-sizing: border-box;
 }
 .service__title--para {
@@ -321,14 +329,14 @@ FEATURES ↓
   width: 20px;
   height: 20px;
   border-radius: 500px;
-  border: color black;
+  border: 1px solid rgba(224, 208, 208, 0.548);
   border: weight 1px;
 }
 .service__icon {
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.158);
   border-radius: 500px;
   width: 300%;
-  padding: 3px;
+  padding: 12px;
 }
 
 /* 
@@ -514,48 +522,105 @@ PRICING ↓
   flex-direction: column;
   align-items: center;
 }
-
+.pricing__wrapper {
+  max-width: 800px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.pricing__para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 500px;
+}
 .plans {
   display: flex;
   gap: 20px;
   width: 100%;
+  padding-top: 28px;
 }
 
 .plan {
-  background-color: rgb(225, 226, 126);
-  width: 280px;
+  width: 460px;
   margin: 0 auto;
-  padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
+  white-space: nowrap;
 }
-.plan__price span {
-  font-size: 50%;
-  color: #666;
+.plan__highlighted1.plan__highlighted3 {
+  background-color: #ffffff;
 }
 
+.plan__highlighted2 {
+  background-color: rgb(102, 126, 234);
+}
+
+.plan__stripe {
+  height: 10px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-bottom: 16px;
+}
+.stripe1 {
+  background-color: #64c0b1;
+}
+.button1 {
+  background-color: #64c0b1;
+}
+
+.button2 {
+  background-color: white;
+  font-weight: 700;
+}
+.stripe3 {
+  background-color: #d87a8a;
+}
+.button3 {
+  background-color: #d87a8a;
+}
+.plan__header {
+  border-color: rgba(0, 0, 0, 0.151);
+  border-width: 2px;
+  border-style: solid;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
 .plan__features {
   list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
-  margin: 10px 0;
-  color: #555;
+  padding: 10px;
+  border-color: rgba(0, 0, 0, 0.151);
+  border-width: 2px;
+  border-style: solid;
+  border-top-width: 0;
 }
-
 .plan__button {
-  background-color: #180cc0;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 20px 80px;
+  border-radius: 18px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  height: 32px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.button__plan--wrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 0.151);
+  border-width: 2px;
+  border-style: solid;
+  border-top-width: 0;
+}
 .plan__button:hover {
   background-color: #7b73e8;
 }
