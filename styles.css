@@ -523,7 +523,7 @@ PRICING ↓
   align-items: center;
 }
 .pricing__wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -533,16 +533,18 @@ PRICING ↓
   align-items: center;
   margin: 0 auto;
   width: 500px;
+  color: rgba(0, 0, 0, 0.39);
 }
 .plans {
   display: flex;
   gap: 20px;
-  width: 100%;
-  padding-top: 28px;
+  width: 1000px;
+  padding-top: 32px;
 }
 
 .plan {
-  width: 460px;
+  position: relative;
+  width: 290px;
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -553,8 +555,13 @@ PRICING ↓
   text-align: center;
   white-space: nowrap;
 }
+.section__title {
+  font-size: 48px;
+}
+
 .plan__highlighted1.plan__highlighted3 {
   background-color: #ffffff;
+  
 }
 
 .plan__highlighted2 {
@@ -567,6 +574,10 @@ PRICING ↓
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   margin-bottom: 16px;
+  position: absolute;
+  top: 0;   
+  right: 0;
+
 }
 .stripe1 {
   background-color: #64c0b1;
@@ -581,6 +592,7 @@ PRICING ↓
 }
 .stripe3 {
   background-color: #d87a8a;
+ 
 }
 .button3 {
   background-color: #d87a8a;
@@ -591,15 +603,38 @@ PRICING ↓
   border-style: solid;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  
 }
+
+.plan__month {
+  padding-bottom: 12px;
+  color: rgba(0, 0, 0, 0.39);
+}
+.plan__title {
+  padding: 24px;
+}
+h1,
+.plan__price {
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+
 .plan__features {
   list-style: none;
-  padding: 10px;
+  padding: 16px;
   border-color: rgba(0, 0, 0, 0.151);
   border-width: 2px;
   border-style: solid;
   border-top-width: 0;
 }
+.plan__feature {
+  padding: 8px 0;
+  color: rgba(0, 0, 0, 0.39);
+}
+.white {
+  color: white;
+}
+
 .plan__button {
   color: white;
   border: none;
@@ -620,6 +655,9 @@ PRICING ↓
   border-width: 2px;
   border-style: solid;
   border-top-width: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px;
 }
 .plan__button:hover {
   background-color: #7b73e8;
