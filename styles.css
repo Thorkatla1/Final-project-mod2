@@ -668,10 +668,30 @@ TESTIMONIALS ↓
 
 */
 
-#testimonials .row {
+
+.testimonials__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.testimonials__comlumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  padding: 0 40px;
 }
 
+.testimonial__img--container {  
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* 
 
 START / CALL TO ACTION ↓
