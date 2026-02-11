@@ -62,7 +62,7 @@ button {
 }
 
 .container {
-  padding: 80px;
+  padding: 40px;
   max-width: 1200px;
 }
 
@@ -83,6 +83,7 @@ img {
 main {
   margin-bottom: 96px;
 }
+
 
 /*
 
@@ -163,9 +164,14 @@ HEADER
   padding: 60px 0;
   height: calc(100% - 80px);
 }
+.row .header__row {
+  display: flex;
+  margin: 0 auto;  
+  width: 100vw;
 
+}
 .header__description {
-  width: 40%;
+
   padding: 20px;
 }
 .header__email--container {
@@ -176,9 +182,11 @@ HEADER
   font-size: 12px;
   font-weight: bold;
 }
+.header__img--wrapper{
+  width: 50vw;
+}
 .header__img {
-  width: 60%;
-  padding: 20px 40px;
+  padding: 20px 80px;
 }
 .header__img--main {
   max-width: 60kv;
@@ -337,6 +345,7 @@ FEATURES ↓
 }
 .service__para {
   font-size: 12;
+ padding-top: 20px;
 }
 .service__title--para {
   display: flex;
@@ -349,8 +358,8 @@ FEATURES ↓
 .service {
   width: calc(100% / 3);
   display: flex;
-  margin: 40px 0;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
 }
 
 .service__icon {
@@ -370,6 +379,7 @@ QUALITY WORK ↓
 .quality__container {
   display: flex;
   margin: 0 auto;
+  flex: flex1;
 }
 
 .quality__row {
@@ -392,8 +402,8 @@ QUALITY WORK ↓
   padding-top: 12px;
 }
 
-.quality__btn {
-  width: 100px;
+.quality__btn, .values__btn{
+  width: 90px;
 }
 /*
 
@@ -414,7 +424,7 @@ STEPS ↓
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 80px 0;
   flex: row;
 }
 #steps .row {
@@ -422,6 +432,7 @@ STEPS ↓
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .steps__column {
@@ -429,24 +440,23 @@ STEPS ↓
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-
+.steps__list{
+  width: 100%
+}
 .steps__para {
   max-width: 280px;
   padding-bottom: 20px;
 }
 .steps__para--wrapper {
-  margin-left: 100px;
+  margin-left: 48px;
 }
 
 .steps__item--container {
   display: flex;
 }
-.steps__img--wrapper {
-  width: 20px;
-  height: 20px;
-  padding-right: 60px;
-}
+.steps
 
 .number {
   font-size: 30px;
@@ -454,6 +464,7 @@ STEPS ↓
 }
 .number__space {
   display: flex;
+  width: 100%;
 }
 
 /* 
@@ -662,7 +673,7 @@ h1,
   color: white;
   font-size: 18px;
   border: none;
-  padding: 30px 80px;
+  padding: 30px 68px;
   border-radius: 224px;
   cursor: pointer;
   height: 32px;
@@ -735,9 +746,12 @@ TESTIMONIALS ↓
   color: rgba(0, 0, 0, 0.418);
   padding-bottom: 20px;
 }
+.fa-star {
+  color: gold;
+}
 .testimonials__rating--gold {
   padding-bottom: 20px;
-  color: gold;
+
 }
 .testimonials__para2 {
   padding: 20px 0;
@@ -875,6 +889,7 @@ FOOTER ↓
 .footer__column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wra;
   line-height: 2;
 }
 .footer__text {
@@ -975,6 +990,10 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 1280px) {
   header .row {
     align-items: flex-end;
+  }
+  .header__container .quality__container{
+    display: flex;
+    flex-direction: column;
   }
 }
 
