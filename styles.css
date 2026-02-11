@@ -366,17 +366,17 @@ QUALITY WORK ↓
 
 */
 
-.quality__container{
-  display: flex;
-}
+
 .quality__container {
   display: flex;
+  margin: 0 auto;
 }
 
 .quality__row {
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 32px;
 }
 
 .quality__tag {
@@ -384,12 +384,17 @@ QUALITY WORK ↓
 }
 .quality__img {
   width: 50%;
+  padding: 32px;
 }
 
 .quality__para {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  padding-top: 12px;
 }
 
+.quality__btn {
+  width: 100px;
+}
 /*
 
 STEPS ↓
@@ -730,7 +735,7 @@ TESTIMONIALS ↓
   color: rgba(0, 0, 0, 0.418);
   padding-bottom: 20px;
 }
-.testimonials__rating {
+.testimonials__rating--gold {
   padding-bottom: 20px;
   color: gold;
 }
