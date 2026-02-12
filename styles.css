@@ -24,7 +24,7 @@ h1 {
   padding-bottom: 24px;
 }
 h2 {
-  font-size: 36px;
+  font-size: 38px;
 }
 .btn__menu {
   background-color: transparent;
@@ -321,7 +321,7 @@ FEATURES ↓
 .service__container {
   display: flex;
   align-items: center;
-  height: 100vh;
+  
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -377,7 +377,7 @@ QUALITY WORK ↓
 .quality__container {
   display: flex;
   margin: 0 auto;
-  flex: flex1;
+align-items: center;
 }
 
 .quality__row {
@@ -393,6 +393,7 @@ QUALITY WORK ↓
 .quality__img {
   width: 50%;
   padding: 32px;
+  max-height: 400px;
 }
 
 .quality__para {
@@ -409,7 +410,7 @@ STEPS ↓
 
 */
 #steps {
-  height: 100vh;
+ 
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -418,7 +419,7 @@ STEPS ↓
 .steps__container {
   display: flex;
   align-items: center;
-  height: 100vh;
+  
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -477,13 +478,14 @@ VALUES ↓
 
 */
 #values {
-  height: calc(100vh);
+
   max-width: 1200px;
   margin: 0 auto;
 }
-.values__container {
-  height: 100vh;
+.values__container{
+  margin: 0 0 72px 0;
 }
+
 #values .row {
   display: flex;
   flex-direction: row;
@@ -554,12 +556,14 @@ PRICING ↓
 */
 
 #pricing {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+}
+.pricing__container{
+  margin-top: 64px;
 }
 
 #pricing .row {
@@ -651,9 +655,9 @@ PRICING ↓
 .plan__title {
   padding: 24px;
 }
-h1,
+
 .plan__price {
-  font-size: 36px;
+
   padding-bottom: 12px;
 }
 
@@ -709,7 +713,7 @@ TESTIMONIALS ↓
 */
 
 #testimonials {
-  height: 100vh;
+
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -718,7 +722,7 @@ TESTIMONIALS ↓
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin-top: 32px; 
   width: 100%;
   max-width: 1200px;
 }
@@ -804,7 +808,7 @@ START / CALL TO ACTION ↓
 #start {
   display: flex;
   align-items: center;
-  height: 680px;
+  height: 580px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -998,6 +1002,7 @@ MOBILE RESPONSIVENESS ↓
   .header__container .quality__container{
     display: flex;
     flex-direction: column;
+   
   }
 }
 
