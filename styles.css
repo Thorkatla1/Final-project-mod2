@@ -84,7 +84,6 @@ main {
   margin-bottom: 96px;
 }
 
-
 /*
 
 Nav
@@ -102,7 +101,7 @@ Nav
   height: 80px;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 42px;
 }
 
 .nav__logo {
@@ -171,7 +170,6 @@ HEADER
   max-width: 1200px;
 }
 .header__description {
-
   padding: 20px;
 }
 .header__email--container {
@@ -321,7 +319,7 @@ FEATURES ↓
 .service__container {
   display: flex;
   align-items: center;
-  
+
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -343,7 +341,7 @@ FEATURES ↓
 }
 .service__para {
   font-size: 12;
- padding-top: 20px;
+  padding-top: 20px;
 }
 .service__title--para {
   display: flex;
@@ -373,11 +371,10 @@ QUALITY WORK ↓
 
 */
 
-
 .quality__container {
   display: flex;
   margin: 0 auto;
-align-items: center;
+  align-items: center;
 }
 
 .quality__row {
@@ -401,7 +398,8 @@ align-items: center;
   padding-top: 12px;
 }
 
-.quality__btn, .values__btn{
+.quality__btn,
+.values__btn {
   width: 90px;
 }
 /*
@@ -410,7 +408,6 @@ STEPS ↓
 
 */
 #steps {
- 
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -419,7 +416,7 @@ STEPS ↓
 .steps__container {
   display: flex;
   align-items: center;
-  
+
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -427,12 +424,11 @@ STEPS ↓
 }
 .steps__row {
   display: flex;
-box-sizing: border-box;
- width: 40%;
+  box-sizing: border-box;
+  width: 40%;
 }
-.h1__steps{
-  padding-bottom: 24px
-
+.h1__steps {
+  padding-bottom: 24px;
 }
 .steps__column {
   display: flex;
@@ -442,8 +438,8 @@ box-sizing: border-box;
   width: 100%;
   max-width: 1280px;
 }
-.steps__list{
-  width: 100%
+.steps__list {
+  width: 100%;
 }
 .steps__para {
   max-width: 320px;
@@ -456,9 +452,7 @@ box-sizing: border-box;
 .steps__item--container {
   display: flex;
 }
-.steps
-
-.number {
+.steps .number {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.144);
   padding-right: 20px;
@@ -469,7 +463,6 @@ box-sizing: border-box;
 }
 .steps__text {
   padding-bottom: 16px;
-
 }
 
 /* 
@@ -478,11 +471,10 @@ VALUES ↓
 
 */
 #values {
-
   max-width: 1200px;
   margin: 0 auto;
 }
-.values__container{
+.values__container {
   margin: 0 0 72px 0;
 }
 
@@ -562,7 +554,7 @@ PRICING ↓
   max-width: 1200px;
   margin: 0 auto;
 }
-.pricing__container{
+.pricing__container {
   margin-top: 64px;
 }
 
@@ -605,7 +597,7 @@ PRICING ↓
   font-size: 48px;
 }
 .plan--highlighted {
- margin: 32px;
+  margin: 32px;
 }
 .plan__highlighted1.plan__highlighted3 {
   background-color: #ffffff;
@@ -657,7 +649,6 @@ PRICING ↓
 }
 
 .plan__price {
-
   padding-bottom: 12px;
 }
 
@@ -713,7 +704,6 @@ TESTIMONIALS ↓
 */
 
 #testimonials {
-
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -722,7 +712,7 @@ TESTIMONIALS ↓
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 32px; 
+  margin-top: 32px;
   width: 100%;
   max-width: 1200px;
 }
@@ -759,7 +749,6 @@ TESTIMONIALS ↓
 }
 .testimonials__rating--gold {
   padding-bottom: 20px;
-
 }
 .testimonials__para2 {
   padding: 20px 0;
@@ -996,13 +985,13 @@ MOBILE RESPONSIVENESS ↓
 */
 
 @media (max-width: 1280px) {
-  header .row {
+  .row.header__row {
     align-items: flex-end;
+    max-width: 600px;
   }
-  .header__container .quality__container{
+  .header__container .quality__container {
     display: flex;
     flex-direction: column;
-   
   }
 }
 
@@ -1010,15 +999,28 @@ MOBILE RESPONSIVENESS ↓
   .btn__menu {
     display: block;
   }
-  header .row {
+  .header__row {
     flex-direction: column;
     align-items: center;
+  }
+  .header__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__description--para {
+        max-width: 80%;   
+  }
+  .header__email--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   footer {
     padding: 80px 32px;
   }
 }
-
 @media (max-width: 768px) {
   #quality .row,
   #values .row {
@@ -1031,6 +1033,20 @@ MOBILE RESPONSIVENESS ↓
   }
   #pricing .row {
     margin-top: 40px;
+  }
+   .header__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__description--para {
+        max-width: 80%;   
+  }
+  .header__email--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
