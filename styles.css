@@ -155,7 +155,7 @@ Nav
 }
 .menu__backdrop {
   position: absolute;
-  background-color: pink;
+  background-color: white;
   top: 0;
   left: 0;
   bottom: 0;
