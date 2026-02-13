@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Final Project Mod 2</title>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -29,25 +30,32 @@
             <li><a href="#" class="nav__link">Pricing</a></li>
             <li><a href="#" class="nav__link">Contact Us</a></li>
             <li><a href="#" class="nav__link">Login</a></li>
-            <li>
-              <button class="btn nav__link--primary">Sign Up</button>
-            </li>
 
-            <li>
-              <button class="btn__menu"><i class="fas fa-bars"></i></button>
-            </li>
-            <li class="menu__backdrop"></li>
-            <li class="btn__menu btn__menu--close"></li>
-
+            <button class="btn nav__link--primary">Sign Up</button>
+          </ul>
+        </div>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
             <li class="menu__list">
-              <a href="#header" class="menu__home">Home</a>
+              <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
+                >Blog</a
+              >
+              <a href="#pricing" class="menu__link" onclick="closeMenu()"
+                >Pricing</a
+              >
+              <a href="#" class="menu__link" onclick="closeMenu()"
+                >Contact Us</a
+              >
+              <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
             </li>
-               <ul class="nav__links">
-            <li><a href="#" class="nav__link">About</a></li>
-            <li><a href="#" class="nav__link no__cursor" >Blog</a></li>
-            <li><a href="#" class="nav__link">Pricing</a></li>
-            <li><a href="#" class="nav__link no cursor">Contact Us</a></li>
-            <li><a href="#" class="nav__link">Login</a></li>
+
             <li>
               <button class="btn nav__link--primary">Sign Up</button>
             </li>
