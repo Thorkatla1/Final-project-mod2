@@ -164,6 +164,22 @@ Nav
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.menu--open .menu__backdrop{
+  visibility: visible;
+  opacity: 1;
+}
+.menu--open{
+  max-height: 100vh;
+  overflow:hidden;
+}
+body.menu--open{
+
+   overflow: hidden
+
 }
 
 .menu__links {
