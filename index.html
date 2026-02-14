@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <section id="landing">
+    <div id="landing">
       <div class="row nav__row">
         <div class="nav">
           <div class="nav__logo">
@@ -32,36 +32,38 @@
             <li><a href="#" class="nav__link">Login</a></li>
 
             <button class="btn nav__link--primary">Sign Up</button>
-          </ul>
-        </div>
-        <button class="btn__menu" onclick="openMenu()">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-            <i class="fas fa-times"></i>
-          </button>
-          <ul class="menu__links">
-            <li class="menu__list">
-              <a href="#" class="menu__link" onclick="closeMenu()">About</a>
-              <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
-                >Blog</a
-              >
-              <a href="#pricing" class="menu__link" onclick="closeMenu()"
-                >Pricing</a
-              >
-              <a href="#" class="menu__link" onclick="closeMenu()"
-                >Contact Us</a
-              >
-              <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
-            </li>
+          
 
-            <li>
-              <button class="btn nav__link--primary">Sign Up</button>
-            </li>
-          </ul>
-        </div>
-      </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a
+                >
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
+                  >Blog</a
+                >
+                <a href="#pricing" class="menu__link" onclick="closeMenu()"
+                  >Pricing</a
+                >
+                <a href="#" class="menu__link" onclick="closeMenu()"
+                  >Contact Us</a
+                >
+                <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+              </li>
+
+              <li>
+                <button class="btn nav__link--primary">Sign Up</button>
+              </li>
+            </ul>
+          </div>
+        
+     
       <header>
         <div class="header__container">
           <div class="row header__row">
@@ -95,10 +97,10 @@
                 src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
               />
             </div>
-          </div>
+          </div>        
         </div>
       </header>
-    </section>
+  
     <div id="service">
       <div class="container">
         <div class="row">
@@ -573,5 +575,5 @@
         </div>
       </div>
     </div>
-  </body>
+ </body>>
 </html>

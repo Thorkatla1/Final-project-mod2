@@ -94,6 +94,7 @@ Nav
   display: flex;
   justify-content: space-between;
   padding-top: center;
+ 
 }
 
 .nav__container {
@@ -111,11 +112,13 @@ Nav
 .customer__logo--img {
   height: 40px;
 }
-.row .nav__row {
+.row.nav__row {
   display: flex;
   justify-content: space-between;
   width: 100%;
+   height: 80px;
 }
+
 .nav__links {
   list-style-type: none;
   display: flex;
@@ -152,6 +155,7 @@ Nav
   text-align: center;
   border: none;
   color: #6415ff;
+  display: none;
 }
 .menu__backdrop {
   position: absolute;
@@ -176,10 +180,8 @@ Nav
   max-height: 100vh;
   overflow:hidden;
 }
-body.menu--open{
-
+.menu--open{
    overflow: hidden
-
 }
 
 .menu__links {
@@ -1047,13 +1049,23 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 1280px) {
   .row.header__row {
     align-items: flex-end;
-    max-width: 600px;
-  }
+    max-width: 600px;    
+    }.nav__link{
+      display: none;
+  } button.nav__link--primary {
+    display: none;
+  }  
   .header__container .quality__container {
     display: flex;
     flex-direction: column;
   }
+  .h2__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+  }
 
 @media (max-width: 1024px) {
   .btn__menu {
