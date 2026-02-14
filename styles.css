@@ -643,7 +643,7 @@ PRICING ↓
 .plans {
   display: flex;
   gap: 20px;
-  width: 1200px;
+  max-width: 1200;
   padding-top: 32px;
 }
 
@@ -1069,7 +1069,6 @@ MOBILE RESPONSIVENESS ↓
     justify-content: start;
     align-items: center;
   }
-
   .btn__menu {
     visibility: visible;
     opacity: 1;
@@ -1079,15 +1078,29 @@ MOBILE RESPONSIVENESS ↓
     text-align: center;
     margin: 0 auto;
   }
-  h1{
-    padding: 40px;
-    margin: 0 auto;
+  h1 {
+    padding: none;
+    text-align: center;
   }
-  .service__title--para{
+  .service__title--para {
     padding: 0;
   }
   p {
-   margin: 0  auto;
+    margin: 0 auto;
+  }
+  .service {
+    width: 100%;
+  }
+  .plans {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+  .plan.plan--highlighted {
+    max-width: 400px;
+    flex-direction: column;
   }
 }
 
@@ -1153,4 +1166,14 @@ MOBILE RESPONSIVENESS ↓
   main {
     margin-bottom: 80px;
   }
+
+.plans{
+  justify-content: center;align-items: center;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.plan{
+  max-width: 300px;
+}
+
 }
