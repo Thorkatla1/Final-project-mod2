@@ -25,6 +25,12 @@ h1 {
 h2 {
   font-size: 38px;
 }
+.h2__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .btn:hover {
   cursor: pointer;
@@ -1053,10 +1059,13 @@ MOBILE RESPONSIVENESS ↓
     flex-direction: column;
   }
   .h2__header {
-    display: flex;
-    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    justify-content: start;
     align-items: center;
-    text-align: center;
+  }
+  .h2__header .purple {
+    display: inline;
   }
   .btn__menu {
     visibility: visible;
