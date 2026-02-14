@@ -25,13 +25,18 @@ h1 {
 h2 {
   font-size: 38px;
 }
+/* Fix for the heading text wrap */
 .h2__header {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* Remove any fixed width if present */
 }
-
+.h2__header .purple {
+  display: inline; /* Keep it inline so it flows with text */
+  /* Don't use display: block on the span */
+}
 .btn:hover {
   cursor: pointer;
   background-color: #7b73e8;
@@ -1064,18 +1069,25 @@ MOBILE RESPONSIVENESS ↓
     justify-content: start;
     align-items: center;
   }
-  .h2__header .purple {
-    display: inline;
-  }
+
   .btn__menu {
     visibility: visible;
     opacity: 1;
   }
   .header__description--para {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
+    text-align: center;
     margin: 0 auto;
+  }
+  h1{
+    padding: 40px;
+    margin: 0 auto;
+  }
+  .service__title--para{
+    padding: 0;
+  }
+  p {
+   margin: 0  auto;
   }
 }
 
@@ -1093,9 +1105,7 @@ MOBILE RESPONSIVENESS ↓
     justify-content: center;
     align-items: center;
   }
-  .header__description--para {
-    max-width: 80%;
-  }
+
   .header__email--container {
     display: flex;
     align-items: center;
@@ -1124,9 +1134,7 @@ MOBILE RESPONSIVENESS ↓
     justify-content: center;
     align-items: center;
   }
-  .header__description--para {
-    max-width: 80%;
-  }
+
   .header__email--container {
     display: flex;
     align-items: center;
